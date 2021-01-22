@@ -1,7 +1,7 @@
 db.produtos.updateMany(
   { tags: {
     $elemMatch:
-      { tipo: "sódio", percentual: { $and: [{ $gt: 20 }, { $lt: 40 }] } },
+      { tipo: "sódio", percentual: { $gt: 20, $lt: 40 } },
   } },
 );
 
