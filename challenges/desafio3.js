@@ -27,7 +27,7 @@ db.produtos.updateMany(
 );
 
 db.produtos.updateMany(
-  { tags: { $eq: "bovino" } },
+  { tags: "bovino" },
   {
     $inc: {
       avaliacao: 5,
@@ -36,7 +36,7 @@ db.produtos.updateMany(
 );
 
 db.produtos.updateMany(
-  { tags: { $eq: "ave" } },
+  { tags: "ave" },
   {
     $inc: {
       avaliacao: 3,
