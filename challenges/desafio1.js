@@ -8,7 +8,7 @@ no valor desse campo.
 
 2)Crie uma query que retorne o nome e criadoPor de todos os produtos. */
 
-db.products.updateMany(
+db.produtos.updateMany(
   {},
   {
     $set: {
@@ -17,4 +17,4 @@ db.products.updateMany(
   },
 );
 
-db.products.find({}, { nome: 1, criadoPor: 1, _id: 0 });
+db.produtos.find({}, { nome: 1, criadoPor: 1, _id: 0 });
