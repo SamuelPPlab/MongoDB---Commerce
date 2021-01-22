@@ -1,4 +1,6 @@
-db.produtos.createIndex({ descricao: "text" });
+db.produtos.createIndex({
+  descricao: "text",
+});
 
 db.produtos.find({
   $text: {
