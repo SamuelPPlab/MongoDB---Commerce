@@ -7,7 +7,7 @@ db.produtos.updateMany(
           "combo",
           "tasty",
         ],
-        $sort: { tags: 1 },
+        $sort: 1,
       },
     },
   },
