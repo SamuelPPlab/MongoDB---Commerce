@@ -4,7 +4,7 @@ db.produtos.updateMany({}, {
   },
 });
 
-db.produtos.updateOne({ nome: "Big Mac"}, {
+db.produtos.updateOne({ nome: "Big Mac" }, {
   $set: { "vendasPorDia.3": 60 },
 });
 
