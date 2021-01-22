@@ -34,11 +34,8 @@ db.produtos.updateMany(
 db.produtos.updateOne(
   { nome: "Big Mac" },
   {
-    $push: {
-      vendasPorDia: {
-        $each: [60],
-        $position: 3,
-      },
+    $inc: {
+      "vendasPorDia.3": 60,
     },
   },
 );
@@ -46,11 +43,8 @@ db.produtos.updateOne(
 db.produtos.updateMany(
   { tags: { $in: ["bovino", "pão"] } },
   {
-    $push: {
-      vendasPorDia: {
-        $each: [120],
-        $position: 6,
-      },
+    $inc: {
+      "vendasPorDia.3": 120,
     },
   },
 );
