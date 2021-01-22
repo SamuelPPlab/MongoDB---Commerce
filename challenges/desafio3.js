@@ -1,4 +1,4 @@
-db.produtos.updateMany({}, { $addToSet: { avaliacao: NumberInt(0) } });
+db.produtos.updateMany({}, { $set: { avaliacao: NumberInt(0) } });
 
 db.produtos.updateMany(
   { tags: { $all: ["bovino"] } },
