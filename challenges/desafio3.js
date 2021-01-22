@@ -1,0 +1,5 @@
+db.produtos.updateMany({}, { $set: { avaliacao: NumberInt(0) } }, { $upsert: true });
+
+db.produtos.updateMany({ tags: "bovino" }, { $inc: { avaliacao: 5 } });
+
+db.produtos.updateMany({ tags: "ave" }, { $inc: { avaliacao: 3 } });
