@@ -1,7 +1,6 @@
 db.produtos.updateMany(
   { valoresNutricionais:
-    { $elemMatch: { tipo: { $eq: "sódio" }, $and: [{ percentual: { $gt: 20 } }, { percentual: { $lt: 40 } }] } },
-  },
+    { $elemMatch: { tipo: "sódio" }, $and: [{ percentual: { $gt: 20 } }, { percentual: { $lt: 40 } }] } },
   { $addToSet: { tags: { $each: ["contém sódio"] } } },
 );
 
