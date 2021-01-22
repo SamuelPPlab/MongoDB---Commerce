@@ -1,6 +1,6 @@
 db.produtos.updateMany(
   {},
-  { avaliacao: NumberInt(0) },
+  { $set: { avaliacao: NumberInt(0) } },
 );
 
 db.produtos.updateMany(
