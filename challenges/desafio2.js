@@ -5,4 +5,4 @@ db.produtos.updateMany(
   } },
 );
 
-db.produtos.find({}, { nome: 1, valorUnitario: 1 });
+db.produtos.find({}, { nome: 1, valorUnitario: 1, _id: 0 });
