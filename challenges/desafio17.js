@@ -4,5 +4,5 @@ db.produtos.createIndex(
 );
 
 db.produtos.find(
-  { $text: { $search: "frango hamburguer", $language: "pt", $caseSensitive: false } },
+  { $text: { $search: "frango hamburguer" } },
 ).count();
