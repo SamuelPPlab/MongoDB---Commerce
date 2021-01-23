@@ -1,35 +1,31 @@
 db.produtos.updateMany(
   {},
   {
-    $addToSet: {
-      vendasPorDia: [0, 0, 0, 0, 0, 0, 0],
-    },
+    $set: { vendasPorDia: [0, 0, 0, 0, 0, 0, 0] },
   },
 );
 
-/* dias: {
-  dom: 0,
-  seg: 1,
-  ter: 2,
-  qua: 3,
-  qui: 4,
-  sex: 5,
-  sab: 6,
-} */
-
-db.produtos.find(
+db.produtos.updateOne(
   { nome: "Big Mac" },
   {
-    $inc: {
-      "vendasPorDia.3": 60,
-    },
+    $inc: { "vendasPorDia.3": 60 },
+  },
+);
+
+db.produtos.updateMany(
+  {
+    tags: { $all: ["bovino", "pão"] },
+  },
+  {
+    $inc: { "vendasPorDia.6": 120 },
   },
 );
 
 db.produtos.find(
+  {},
   {
-    ingredientes: {
-      $in: ["bovino"],
-    },
+    _id: 0,
+    nome: 1,
+    vendasPorDia: 1,
   },
 );
