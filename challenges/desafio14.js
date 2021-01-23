@@ -5,6 +5,7 @@ db.produtos.updateMany(
     },
   },
   },
+
   {
     $push: { tags: "contém sódio" },
   },
