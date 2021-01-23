@@ -8,6 +8,6 @@ db.produtos.updateOne(
 );
 
 db.produtos.find(
-  { ultimaModificacao: { $exist: true } },
+  { ultimaModificacao: { $exists: true } },
   { nome: true, _id: false },
 );
