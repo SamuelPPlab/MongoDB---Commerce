@@ -6,14 +6,14 @@ db.produtos.updateMany(
 );
 
 db.produtos.updateMany(
-  { $elemMatch: { tag: "bovino" },
+  { $elemMatch: { tag: "bovino" } },
   { $set:
     { avaliacao: NumberInt("5") },
   },
 );
 
 db.produtos.updateMany(
-  { $elemMatch: { tag: "bovino" },
+  { $elemMatch: { tag: "bovino" } },
   { $set:
     { avaliacao: NumberInt("3") },
   },
