@@ -4,6 +4,6 @@ db.produtos.updateOne(
 );
 
 db.produtos.find(
-  { ultimaModificacao: { $exists: 1 } },
+  { ultimaModificacao: { $exists: true } },
   { nome: 1, _id: 0 },
 );

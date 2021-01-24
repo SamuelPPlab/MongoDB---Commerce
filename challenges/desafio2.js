@@ -1,5 +1,5 @@
 db.produtos.updateMany(
-  { valorUnitario: { $exits: 0 } },
+  { valorUnitario: { $exits: false } },
   { $set: { valorUnitario: NumberDecimal("0.00") } },
 );
 
