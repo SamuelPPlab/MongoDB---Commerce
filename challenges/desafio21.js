@@ -1,2 +1,1 @@
-db.produtos.updateMany({ nome: "Big Mac" }, { $unset: { curtidas: "" } });
-db.produtos.find({}, { nome: 1, _id: 0 });
+db.produtos.find({ $expr: { $gt: ["$curtidas", "$vendidos"] } }, { nome: 1, _id: 0 });
