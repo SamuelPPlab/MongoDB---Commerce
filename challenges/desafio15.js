@@ -1,1 +1,1 @@
-db.produtos.find({ $text: { $search: "mc" }, $caseSensitive: false });
+db.produtos.find({ $elemMatch: { nome: "mc" }, $caseSensitive: false });
