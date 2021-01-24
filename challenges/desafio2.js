@@ -1,3 +1,4 @@
-// db.voos.find(
-//   { "empresa.nome": "AZUL" },
-// ).limit(10);
+db.produtos.find(
+  {},
+  { nome: 1, criadoPor: 1, _id: 0 },
+);

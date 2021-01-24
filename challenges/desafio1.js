@@ -1,1 +1,4 @@
-// db.voos.find().count();
+db.produtos.updateMany(
+  {},
+  { $set: { criadoPor: "Ronald McDonald" } },
+);
