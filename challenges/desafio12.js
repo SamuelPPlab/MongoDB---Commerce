@@ -2,7 +2,7 @@ db.produtos.updateMany(
   {},
   // valoresNutricionais: dentro do push que faz ordenar valores nutricionais
   { $push: { valoresNutricionais:
-    { $each: [], $sort { percentual: -1 } }, 
+    { $each: [], $sort: { percentual: -1 } }, 
   } },
 );
 
