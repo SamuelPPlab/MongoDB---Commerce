@@ -1,1 +1,1 @@
-db.artists.count({ nome: { $regex: /^Mc/ } });
+db.artists.count({ nome: { $regex: /^Mc/i } });
