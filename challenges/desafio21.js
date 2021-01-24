@@ -1,1 +1,1 @@
-db.produtos.find({}, { nome: true, _id: false });
+db.produtos.find({ $expr: { $gt: ["$curtidas", "$vendidos"]} }, { nome: true, _id: false });
