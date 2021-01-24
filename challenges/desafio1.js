@@ -1,9 +1,9 @@
 db.products.updateMany(
   { },
-  { $set: { criadoPor: "Ronald McDonald" }}
+  { $set: { criadoPor: "Ronald McDonald" } },
 );
 
 db.products.find(
   { },
-  { nome: 1, criadoPor: 1, _id: 0 }
+  { nome: 1, criadoPor: 1, _id: 0 },
 );
