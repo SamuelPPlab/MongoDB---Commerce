@@ -1,6 +1,3 @@
-
-// show2. Crie uma query que retorne o `nome` e `tags` de todos os documentos. */
-
 db.produtos.updateMany(
   { valoresNutricionais:
     { $elemMatch: { tipo: "sódio", percentual: { $gt: 40 } } } },
