@@ -4,8 +4,13 @@
 // );
 
 // db.produtos.updateOne(
-//   {},
-//   { $set: { vendasPorDia: [0, 0, 0, 0, 0, 0, 0] } },
+//   { nome: "Big Mac" },
+//   { $inc: { "vendasPorDia.3": 60 } },
+// );
+
+// db.produtos.updateMany(
+//   { nome: "Big Mac" },
+//   { $inc: { "vendasPorDia.3": 60 } },
 // );
 
 // db.produtos.find(
