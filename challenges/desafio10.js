@@ -1,13 +1,14 @@
-// db.voos.find(
-//   { $and: [{ "empresa.nome": "GOL" }, { ano: 2017 }] },
-//   {
-//     vooId: 1,
-//     "empresa.nome": 1,
-//     "aeroportoOrigem.nome": 1,
-//     "aeroportoDestino.nome": 1,
-//     mes: 1,
-//     ano: 1,
-//     _id: 0,
-//   },
-// )
-//   .limit(10);
+// db.produtos.updateMany(
+//   {},
+//   { $set: { vendasPorDia: [0, 0, 0, 0, 0, 0, 0] } },
+// );
+
+// db.produtos.updateOne(
+//   {},
+//   { $set: { vendasPorDia: [0, 0, 0, 0, 0, 0, 0] } },
+// );
+
+// db.produtos.find(
+//   {},
+//   { nome: 1, ingredientes: 1, _id: 0 },
+// );
