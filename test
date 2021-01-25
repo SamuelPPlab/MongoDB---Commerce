@@ -1,0 +1,3 @@
+./scripts/evaluate.sh
+ DBNAME=commerce ./scripts/resetdb.sh assets/produtos
+ /home/patricia/Área de Trabalho/sd-06-mongodb-commerce/challenges
