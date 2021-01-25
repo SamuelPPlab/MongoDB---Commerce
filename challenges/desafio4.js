@@ -1,4 +1,5 @@
-// Crie uma query que atribua a data corrente ao campo ultimaModificacao no sanduíche Big Mac. Para a data corrente faça uso do tipo Date.
+// Crie uma query que atribua a data corrente ao campo ultimaModificacao
+// no sanduíche Big Mac. Para a data corrente faça uso do tipo Date.
 db.produtos.updateMany(
   { nome: "Big Mac" },
   { $set: { ultimaModificacao: new Date() } },
