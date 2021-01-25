@@ -1,3 +1,9 @@
-// db.voos.count(
-//   { ano: { $in: [2017, 2018] } },
+// db.produtos.updateOne(
+//   {},
+//   { $pop: { ingredientes: -1 } },
+// );
+
+// db.produtos.find(
+//   {},
+//   { nome: 1, ingredientes: 1, _id: 0 },
 // );
