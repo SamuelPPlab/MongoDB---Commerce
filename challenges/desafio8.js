@@ -1,3 +1,9 @@
-// db.voos.count(
-//   { ano: { $gt: 2016 } },
+// db.produtos.updateOne(
+//   {},
+//   { $pull: { ingredientes: "cebola" } },
+// );
+
+// db.produtos.find(
+//   {},
+//   { nome: 1, ingredientes: 1, _id: 0 },
 // );
