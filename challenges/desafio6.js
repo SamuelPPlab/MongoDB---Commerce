@@ -1,4 +1,9 @@
-// db.voos.find(
-//   { vooId: 756807 },
-//   { "empresa.sigla": 1, "empresa.nome": 1, passageiros: 1, _id: 0 },
+// db.produtos.updateMany(
+//   { nome: { $in: ["Big Mac", "Quarteirão com Queijo"] } },
+//   { $push: { ingredientes: "bacon" } }
+// );
+
+// db.produtos.find(
+//   { ultimaModificacao: { $exists: true } },
+//   { nome: 1, _id: 0 },
 // );
