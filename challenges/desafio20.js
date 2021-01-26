@@ -1,11 +1,11 @@
-db.produtos.updateOne(
-  { name: "Big Mac" },
+db.produtos.updateMany(
+  { nome: "Big Mac" },
   { $unset: { curtidas: "" } },
 );
 
 // db.produtos.deleteOne(
 //   { name: "Big Mac" },
-//   { curtidas: 145.0 },
+//   { curtidas: "145.0" },
 // );
 
 db.produtos.find(
