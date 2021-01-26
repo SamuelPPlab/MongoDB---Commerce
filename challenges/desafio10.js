@@ -19,4 +19,4 @@ db.produtos.updateMany({ tags: { $in: ["bovino"] } },
     },
   });
 
-db.produtos.find({}, { nome: 1, valorUnitario: 1, _id: 0 });
+db.produtos.find({}, { nome: 1, vendasPorDia: 1, _id: 0 });
