@@ -1,5 +1,5 @@
 db.produtos.updateOne(
-  { nme: "Big Mac" },
+  { name: "Big Mac" },
   { $unset: { curtidas: "" } },
 );
 
