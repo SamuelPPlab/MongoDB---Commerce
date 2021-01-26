@@ -20,3 +20,4 @@ db.produtos.updateMany({ tags: { $in: ["ave"] } },
   });
 
 db.produtos.find({}, { nome: 1, avaliacao: 1, _id: 0 });
+
