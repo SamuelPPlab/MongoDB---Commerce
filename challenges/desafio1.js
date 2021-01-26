@@ -13,3 +13,4 @@ db.produtos.find(
 // https://stackoverflow.com/questions/8218484/mongodb-inserts-float-when-trying-to-insert-integer
 // https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/
 // https://docs.mongodb.com/manual/reference/operator/update/currentDate/
+// https://docs.mongodb.com/manual/reference/operator/query/regex/#regex-case-insensitive
