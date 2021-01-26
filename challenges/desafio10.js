@@ -12,10 +12,10 @@ db.produtos.updateMany({ nome: { $eq: "Big Mac" } },
     },
   });
 
-db.produtos.updateMany({ tags: { $in: ["bovino"] } },
+db.produtos.updateMany({ tags: { $in: ["bovino", "pão"] } },
   {
     $inc: {
-      "vendasPorDia.7": 120,
+      "vendasPorDia.6": 120,
     },
   });
 
