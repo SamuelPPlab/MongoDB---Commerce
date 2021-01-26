@@ -1,1 +1,1 @@
-// db.voos.count({ natureza: { $eq: "Internacional" } });
+db.produtos.count({ ingredientes: { $size: 4 } });
