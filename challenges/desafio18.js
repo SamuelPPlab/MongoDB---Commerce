@@ -1,13 +1,14 @@
 db.produtos.createIndex(
   {
-    descricao: text,
+    descricao: "text",
   },
   {
     default_language: "portuguese",
   },
 );
 db.produtos.count({
-  $text: {
-    $search: "frango hamburguer",
+  $text:
+  {
+    $search: "\"feito com\"",
   },
 });
