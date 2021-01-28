@@ -4,7 +4,7 @@ db.produtos.createIndex(
 );
 
 db.produtos.find({
-  $text:{
-      $search: "feito com"
-    }
+  $text: {
+    $search: "feito com",
+  },
 }).count();

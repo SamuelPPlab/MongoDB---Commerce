@@ -1,11 +1,11 @@
 const WEEK_REPORT = [0, 0, 0, 0, 0, 0, 0];
 const TAGS = ["bovino", "pão"];
 db.produtos.updateMany({}, {
-  $set: { vendasPorDia: WEEK_REPORT }
+  $set: { vendasPorDia: WEEK_REPORT },
 });
 
 db.produtos.updateOne({ nome: "Big Mac" }, {
-  $inc: {"vendasPorDia.3": 60 },
+  $inc: { "vendasPorDia.3": 60 },
 });
 
 db.produtos.updateOne({ tags: { $all: TAGS } }, {
