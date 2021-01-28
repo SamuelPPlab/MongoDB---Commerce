@@ -10,7 +10,7 @@ db.produtos.updateMany(
 
 db.produtos.updateMany(
   { tags: { $all: ["ave"] } },
-  { $inc: { $inc: 3 } },
+  { $inc: { $avaliacao: 3 } },
 );
 
 db.produtos.find(
