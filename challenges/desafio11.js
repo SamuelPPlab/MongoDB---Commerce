@@ -3,4 +3,4 @@
 // em ordem alfabética ascendente
 db.produtos.updateMany({}, { $push: { tags: { $each: ["combo", "tasty"], $sort: 1 } } });
 // Crie uma query que retorne o nome e tags de todos os documentos
-db.produtos.find({ nome: 1, tags: 1, _id: 0 });
+db.produtos.find({}, { nome: 1, tags: 1, _id: 0 });
