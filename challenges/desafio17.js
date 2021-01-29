@@ -3,5 +3,5 @@ db.produtos.createIndex(
   { default_language: "portuguese" },
 );
 db.produtos.count(
-  { $text: { $search: "frango hamburguer" } }
+  { $text: { $search: "frango hamburguer" } },
 );
