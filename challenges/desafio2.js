@@ -2,12 +2,12 @@ db
   .produtos
   .updateMany({
     valorUnitario: {
-      $exists: false
-    }
+      $exists: false,
+    },
   }, {
     $set: {
-      valorUnitario: NumberDecimal("0.00")
-    }
+      valorUnitario: NumberDecimal("0.00"),
+    },
   });
 
 db
@@ -15,5 +15,5 @@ db
   .find({}, {
     _id: 0,
     nome: 1,
-    valorUnitario: 1
+    valorUnitario: 1,
   });
