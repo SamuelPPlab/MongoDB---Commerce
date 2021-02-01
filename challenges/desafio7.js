@@ -2,8 +2,8 @@ db
   .produtos
   .updateMany({}, {
     $pull: {
-      ingredientes: "cebola"
-    }
+      ingredientes: "cebola",
+    },
   });
 
 db
@@ -11,5 +11,5 @@ db
   .find({}, {
     _id: 0,
     nome: 1,
-    ingredientes: 1
+    ingredientes: 1,
   });

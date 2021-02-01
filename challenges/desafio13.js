@@ -8,7 +8,7 @@ db
           $gte: 40,
         },
       },
-    }
+    },
   }, {
     $push: {
       tags: "muito sódio",

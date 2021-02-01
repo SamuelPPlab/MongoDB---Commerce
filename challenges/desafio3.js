@@ -2,8 +2,8 @@ db
   .produtos
   .updateMany({}, {
     $set: {
-      avaliacao: NumberInt("0")
-    }
+      avaliacao: NumberInt("0"),
+    },
   });
 
 db
@@ -11,13 +11,13 @@ db
   .updateMany({
     tags: {
       $elemMatch: {
-        $eq: "bovino"
-      }
-    }
+        $eq: "bovino",
+      },
+    },
   }, {
     $set: {
-      avaliacao: NumberInt("5")
-    }
+      avaliacao: NumberInt("5"),
+    },
   });
 
 db
@@ -25,13 +25,13 @@ db
   .updateMany({
     tags: {
       $elemMatch: {
-        $eq: "ave"
-      }
-    }
+        $eq: "ave",
+      },
+    },
   }, {
     $set: {
-      avaliacao: NumberInt("3")
-    }
+      avaliacao: NumberInt("3"),
+    },
   });
 
 db
@@ -39,5 +39,5 @@ db
   .find({}, {
     _id: 0,
     nome: 1,
-    avaliacao: 1
+    avaliacao: 1,
   });

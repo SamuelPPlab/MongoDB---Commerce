@@ -1,11 +1,11 @@
 db
   .produtos
   .updateMany({
-    nome: "Big Mac"
+    nome: "Big Mac",
   }, {
     $unset: {
-      curtidas: ""
-    }
+      curtidas: "",
+    },
   });
 
 db
@@ -13,5 +13,5 @@ db
   .find({}, {
     _id: 0,
     nome: 1,
-    curtidas: 1
+    curtidas: 1,
   });
