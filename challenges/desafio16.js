@@ -2,7 +2,7 @@ db
   .produtos
   .find({
     ingredientes: {
-      $size: 4
-    }
+      $size: 4,
+    },
   })
   .count();

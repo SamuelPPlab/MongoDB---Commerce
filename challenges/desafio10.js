@@ -9,31 +9,31 @@ db
         0,
         0,
         0,
-        0
-      ]
-    }
+        0,
+      ],
+    },
   });
 
 db
   .produtos
   .updateOne({
-    nome: "Big Mac"
+    nome: "Big Mac",
   }, {
     $inc: {
-      "vendasPorDia.3": 60
-    }
+      "vendasPorDia.3": 60,
+    },
   });
 
 db
   .produtos
   .updateMany({
     tags: {
-      $all: ["bovino", "pão"]
-    }
+      $all: ["bovino", "pão"],
+    },
   }, {
     $inc: {
-      "vendasPorDia.6": 120
-    }
+      "vendasPorDia.6": 120,
+    },
   });
 
 db
@@ -41,5 +41,5 @@ db
   .find({}, {
     _id: 0,
     nome: 1,
-    vendasPorDia: 1
+    vendasPorDia: 1,
   });

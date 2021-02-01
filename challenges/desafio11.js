@@ -4,10 +4,10 @@ db
     $push: {
       tags: {
         $each: [
-          "combo", "tasty"
+          "combo", "tasty",
         ],
-        $sort: 1
-      }
+        $sort: 1,
+      },
     }
   });
 
@@ -16,5 +16,5 @@ db
   .find({}, {
     _id: 0,
     nome: 1,
-    tags: 1
+    tags: 1,
   });

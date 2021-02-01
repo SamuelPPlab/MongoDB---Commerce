@@ -5,10 +5,10 @@ db
       valoresNutricionais: {
         $each: [],
         $sort: {
-          percentual: -1
-        }
-      }
-    }
+          percentual: -1,
+        },
+      },
+    },
   });
 
 db
@@ -16,5 +16,5 @@ db
   .find({}, {
     _id: 0,
     nome: 1,
-    valoresNutricionais: 1
+    valoresNutricionais: 1,
   });
