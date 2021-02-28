@@ -3,5 +3,3 @@ Retorne o nome e a quantidade de vendas (vendidos) dos sanduíches em que o núm
 */
 
 db.produtos.find({ vendidos: { $mod: [5, 0] } }, { nome: true, _id: false, vendidos: true });
-
-db.inventory.find({ qty: { $mod: [5, 0] } });

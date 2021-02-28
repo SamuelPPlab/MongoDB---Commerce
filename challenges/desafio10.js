@@ -15,12 +15,12 @@ Crie uma query que retorne o nome e vendasPorDia de todos os documentos.
 
 db.produtos.update({}, {
     $set: { vendasPorDia: [0, 0, 0, 0, 0, 0, 0] },
-    },
+  },
   false,
   true,
 );
 
-db.produtos.update({ nome: "Big Mac" }, { $set: { "vendasPorDia.4": 60 } });
+db.produtos.update({ nome: "Big Mac" }, { $set: { "vendasPorDia.3": 60 } });
 
 db.produtos.update({ tags: { $all: ["bovino", "pão"] } }, { $set: { "vendasPorDia.6": 120 } });
 

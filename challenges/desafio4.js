@@ -14,6 +14,5 @@ db.produtos.update({ nome: "Big Mac" }, {
 
 db.produtos.find({ ultimaModificacao: { $exists: true } }, {
     nome: true,
-    ultimaModificacao: true,
     _id: false,
   });
