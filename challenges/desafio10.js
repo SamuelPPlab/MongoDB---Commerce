@@ -16,8 +16,8 @@ Crie uma query que retorne o nome e vendasPorDia de todos os documentos.
 db.produtos.update({}, {
     $set: { vendasPorDia: [0, 0, 0, 0, 0, 0, 0] },
     },
-    false,
-    true,
+  false,
+  true,
 );
 
 db.produtos.update({ nome: "Big Mac" }, { $set: { "vendasPorDia.4": 60 } });
@@ -28,12 +28,4 @@ db.produtos.find({}, {
     nome: true,
     vendasPorDia: true,
     _id: false,
-});
-
-
-  db.collection.update(
-    { myArray: [ 0, 1 ] },
-    { $set: { "myArray.$[element]": 2 } },
-    { arrayFilters: [ { element: 0 } ],
-      upsert: true }
- )
+  });
