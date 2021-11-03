@@ -1,5 +1,3 @@
-
-
 # Habilidades
 Neste projeto, será necessário:
 
@@ -33,18 +31,14 @@ Neste projeto, será necessário:
 
 ---
 
-
-# Entregáveis
-
-# O que deverá ser desenvolvido
+# O Projeto:
 
 A ideia é trabalhar com o banco de dados `commerce`, que contém dados do cardápio do **McDonald's**, como ingredientes, valores nutricionais e dados fictícios de vendas. As instruções de como restaurar o banco podem ser lidas a seguir.
 
-
-
 Os arquivos devem conter apenas o código MQL (_Mongo Query Language_) do desafio resolvido. **Não se esqueça de incluir o ponto e vírgula (";")** no final de suas queries, como no exemplo a seguir:
 
-# Instruções para restaurar o banco de dados `commerce`
+
+# Instruções para restaurar o banco de dados `commerce`:
 
 1. Abra o terminal e conecte-se à sua instância local do **MongoDB**. Se você receber uma mensagem de erro com uma mensagem como **_Connection refused_**, tente reiniciar sua instância ([veja como fazer isso aqui](https://app.betrybe.com/course/back-end/mongodb/introduction/conteudos/conectando)).
 
