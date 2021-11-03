@@ -2,7 +2,7 @@
   Conte quantos documentos contêm as palavras frango e hamburguer
   utilizando o operador $text.
 
-  Para isso, escreva no arquivo desafio17.js duas queries, nesta
+  Para isso, escreva no arquivo desafioQ.js duas queries, nesta
   ordem:
 
   Crie uma query que faça a criação de um índice do tipo text no

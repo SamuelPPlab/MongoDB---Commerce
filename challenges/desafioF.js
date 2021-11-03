@@ -2,7 +2,7 @@
   Inclua bacon no final da lista de ingredientes dos sanduíches
   Big Mac e Quarteirão com Queijo.
 
-  Para isso, escreva no arquivo desafio6.js duas queries, nesta ordem:
+  Para isso, escreva no arquivo desafioF.js duas queries, nesta ordem:
 
   Crie uma query que faça a inclusão de bacon no final da lista de
   ingredientes dos sanduíches Big Mac e Quarteirão com Queijo.

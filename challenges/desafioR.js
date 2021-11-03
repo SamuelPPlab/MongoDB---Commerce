@@ -2,7 +2,7 @@
   Conte quantos documentos contêm a expressão feito com
   utilizando o operador $text.
 
-  Para isso, escreva no arquivo desafio18.js duas queries,
+  Para isso, escreva no arquivo desafioR.js duas queries,
   nesta ordem:
 
   Crie uma query que faça a criação de um índice do tipo text

@@ -1,7 +1,7 @@
 /*
   Remova o último ingrediente do sanduíche Cheddar McMelt.
 
-  Para isso, escreva no arquivo desafio9.js duas queries,
+  Para isso, escreva no arquivo desafioI.js duas queries,
   nesta ordem:
 
   Crie uma query que faça a remoção do último ingrediente no

@@ -2,7 +2,7 @@
   Ordene em todos os documentos os elementos do array valoresNutricionais
   pelo campo percentual de forma descendente.
 
-  Para isso, escreva no arquivo desafio12.js duas queries, nesta ordem:
+  Para isso, escreva no arquivo desafioL.js duas queries, nesta ordem:
 
   Crie uma query que faça em todos os documentos a ordenação dos elementos do
   array valoresNutricionais pelo campo percentual de forma descendente.

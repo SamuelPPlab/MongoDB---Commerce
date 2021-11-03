@@ -1,7 +1,7 @@
 /*
   Remova o primeiro ingrediente do sanduíche Quarteirão com Queijo.
 
-  Para isso, escreva no arquivo desafio8.js duas queries, nesta ordem:
+  Para isso, escreva no arquivo desafioH.js duas queries, nesta ordem:
 
   Crie uma query que faça a remoção do primeiro ingrediente no sanduíche
   Quarteirão com Queijo.

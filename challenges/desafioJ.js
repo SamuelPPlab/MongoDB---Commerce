@@ -1,7 +1,7 @@
 /*
   Adicione a quantidade de vendas dos sanduíches por dia da semana.
 
-  Para isso, escreva no arquivo desafio10.js quatro queries, nesta ordem:
+  Para isso, escreva no arquivo desafioJ.js quatro queries, nesta ordem:
 
   Crie uma query que inclua um array com sete posições em todos os
   sanduíches. Cada uma delas representará um dia da semana, e cada posição iniciará

@@ -2,7 +2,7 @@
   Atribua a data corrente ao campo ultimaModificacao no
   sanduíche Big Mac.
 
-  Para isso, escreva no arquivo desafio4.js duas queries,
+  Para isso, escreva no arquivo desafioD.js duas queries,
   nesta ordem:
 
   Crie uma query que atribua a data corrente ao campo

@@ -2,7 +2,7 @@
   Adicione o campo avaliacao em todos os documentos da coleção e efetue
   alterações nesse campo.
 
-  Para isso, escreva no arquivo desafio3.js quatro queries, nesta ordem:
+  Para isso, escreva no arquivo desafioC.js quatro queries, nesta ordem:
 
   Crie uma query que inclua o campo avaliacao do tipo NumberInt e com o
   valor 0 em todos os documentos da coleção.
