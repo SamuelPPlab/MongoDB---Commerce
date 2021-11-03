@@ -40,22 +40,9 @@ Neste projeto, será necessário:
 
 A ideia é trabalhar com o banco de dados `commerce`, que contém dados do cardápio do **McDonald's**, como ingredientes, valores nutricionais e dados fictícios de vendas. As instruções de como restaurar o banco podem ser lidas a seguir.
 
----
 
-## Desenvolvimento
 
 Os arquivos devem conter apenas o código MQL (_Mongo Query Language_) do desafio resolvido. **Não se esqueça de incluir o ponto e vírgula (";")** no final de suas queries, como no exemplo a seguir:
-
-   ```js
-   db.produtos.find();
-   ```
-
-   ⚠️ **Restrições** ⚠️:
-
-   - **Não se deve usar aspas simples** para especificar campos e/ou valores. Quando for necessário usar aspas, **use somente aspas duplas**;
-
-   - **Não se deve usar o comando `use commerce`**, haja visto que **os testes já se conectam automaticamente à base `commerce`**.
-
 
 # Instruções para restaurar o banco de dados `commerce`
 
@@ -69,11 +56,3 @@ Os arquivos devem conter apenas o código MQL (_Mongo Query Language_) do desafi
    ```
 
 - A execução desse script criará um banco de dados chamado `commerce` e importará os dados para a coleção `produtos`.
-
-⚠️ Como tanto esse script quanto o script de execução local dos testes (mostrado na [seção seguinte](#implementações-técnicas)), **restauram a base de dados `commerce`**, se atente a salvar seu progresso nos arquivos de desafio! ⚠️
-
-## Linter
-
-Para garantir a qualidade do código, vamos utilizar neste projeto o linter ESLint. Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível e de fácil manutenção! Para rodar o *linter* localmente no projeto, execute o comando abaixo: 
-
-`npm run lint`
